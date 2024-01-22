@@ -9,9 +9,13 @@ Some of the refereces I'm using include
 The goal is to build out an n-dim array class in Python and then port it over to Cpp to be integrated into teenyarray.
 
 ## TODO
-- [ ] write tests (compare against numpy) for ndarray class
-- [ ] resume on page 29 of *guide to numpy*
-- [ ] finish and test the python implement
+- [ ] array class
+  - [ ] add reshape and transpose methods (examine the numpy behavior)
+  - [ ] examine the numpy behavior for views (what does it return? is there a separate view object?)
+  - [ ] add negative indexing, add indexing with len(indices) != len(shape)
+  - [ ] write tests (compare against numpy) for ndarray class
+  - [ ] figure out how the `np.array()` method works
+- [ ] finish and test the python implementation
 - [ ] write a cpp implementation in this repo
 - [ ] write all the cpp tests
 - [ ] bind to python
