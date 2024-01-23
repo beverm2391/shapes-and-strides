@@ -10,10 +10,10 @@ The goal is to build out an n-dim array class in Python and then port it over to
 
 ## TODO
 - [ ] array class
-  - [ ] pick all attributes for the `tarray` api
+  - [X] pick all attributes for the `tarray` api
     - [ ] figure out how offset works (check shapes and strides article)
   - [ ] add reshape and transpose methods (examine the numpy behavior)
-  - [ ] examine the numpy behavior for views (what does it return? is there a separate view object?)
+  - [X] examine the numpy behavior for views (what does it return? is there a separate view object?)
   - [ ] add negative indexing, add indexing with len(indices) != len(shape) (pg 79-84)
   - [ ] write tests (compare against numpy) for ndarray class
   - [ ] figure out how the `np.array()` method works (pg 85)

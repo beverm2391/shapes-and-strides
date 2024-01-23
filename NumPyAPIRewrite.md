@@ -1,4 +1,4 @@
-# API
+# NumpyAPIRewrite
 
 ## tarray
 ### Attributes
@@ -141,4 +141,17 @@ Unary
 - neg, pos, abs, invert
   - via ufuncs except for pos
 - complex, int, long, float, odc, hex
-Array indexing
+Array indexing (pg. 79-84)
+- two types, basic slicing and advanced indexing
+  - triggered depending on obj
+  - Basic Slicing
+    - pythons basic slicing to N dimension
+    - occurs when obj is a slice object `[start:stop:step]`
+    - also works with a list of slice objects, ..., newaxis
+    - basic slice syntax is `i:j:k` where `i` is the starting index `j` is the stopping index and `k` is the step $k\neq 0$ This selects the `m` elements (in the corresponding dimension) with index values $i,i+k,\ldots,i+(m-1)K<j$. 
+    - assume $n$ is the number of elements in the dimension being sliced. Then if $i$ is not given it defaults to 0 for $k>0$ and $n$ for $k<0$. If $j$ is not given it dfefaults to $n$ for $k>0$ and -1 for $k<0$. If $k$ is not fiven it defaults to 1. '::' is the same as ':' and means select all indices on that axis
+    - If the number of object in the selection tuple is less than $N$, then ': is assumed for any remaing dimensions
+    - Ellipsis expand to the number of ':' objects needed to make the selection tuple. only one ellipses is expanded
+    ...
+  - Advanced Selection
+    - triggered when the selecton object, obj, is a *non tuple sequence object, a tarray, or a tuple with one sequence object or tarray*. Two types of indexing: integer and Boolearn. Advanced selection always returns a copy (instead of a view)
