@@ -6,6 +6,7 @@
   - metadata and helpful info
 - `isContiguous`
   - is the array C Contiguous (not memory contiguous)
+  - see the Contiguity section of the [docs](DOCS.md) for more info
 - `shape`
   - tuple showing the array shape (number of elements in each dimenaion)
   - `a.shape = x` is equivalent to `a.reshape(x)`
