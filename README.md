@@ -14,8 +14,8 @@ The goal is to build out an n-dim array class in Python and then port it over to
   - [ ] pick out methods for the `tarray` API
 - [ ] Implement the API in Python
   - [ ] work throguh method development
-- [ ] Add Unit Tests
-- [ ] Start implementing in C++ and overloading with PyBind
+- [ ] Add Unit Tests in Python
+- [ ] Start implementing in C++ and overloading with PyBind (this is when you move to the teenyarray repo)
 - [ ] Iterate
 
 
