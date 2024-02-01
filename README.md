@@ -10,8 +10,12 @@ The goal is to build out an n-dim array class in Python and then port it over to
 
 ## TODO
 - [ ] Sketch the Python API (the literal minimal implementation)
-  - [ ] pick out attributes for the `tarray` API
-  - [ ] pick out methods for the `tarray` API
+  - see the [PythonAPI](PythonAPI.md)
+  - [X] dtype objects
+    - [X] int32, float32, float 64
+  - [X] array scalars
+  - [ ] tfuncs
+  - [ ] tarray class
 - [ ] Implement the API in Python
   - [ ] work throguh method development
 - [ ] Add Unit Tests in Python

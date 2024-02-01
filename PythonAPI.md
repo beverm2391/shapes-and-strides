@@ -7,7 +7,6 @@
 
 ## tarray
 The core n-dimensional array class. (teenyarray)
-
 ### Attributes
 - `shape`
   - dimensions of the array
@@ -24,10 +23,27 @@ The core n-dimensional array class. (teenyarray)
   - argument validation?
 - Indexing and Slicing
   - access and modify elements of subbarays
+- Basic Operations
+- Broadcasting Rules
+- Convesion Methods
 - Reshape
   - change the shape of the array without changing the data
 - Transpose
   - permute the dimensions of the array
+
+## ArrayScalar
+- interaction with python scalars
+- arithmetic and comparison operators
+- type compatibility (with corresponding `Dtype`)
+
+## Dtype
+- type info
+- compatibility checks
+
+## Tfunc
+- function registration (decorators?)
+- Broadcasting and Element Wise Operations
+- Integration with `Tarray`
 
 ## Advanced Functionality
 - should i add broadcasting??
@@ -48,3 +64,6 @@ The core n-dimensional array class. (teenyarray)
 ## Performance Considerations
 - efficent memory layout and access patterns
 - handling of contiguous and non-contiguous data
+
+## Testing
+- write unit tests in pytest or unittest
